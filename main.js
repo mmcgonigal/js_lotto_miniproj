@@ -5,7 +5,7 @@ let drawButton = document.querySelector("#draw")
 let resetButton = document.querySelector("#reset")
 
 const lottoNumbers= [];
-const colors = ["red","yellow","blue","green","orange","purple"]; // for balls color scheme
+const colors = ["#ef5350","#ab47bc","#5c6bc0","#29b6f6","#66bb6a","#ffee58"]; // for balls color scheme
 
 function showNumber(number){
     const eachNumDiv =  document.createElement("div")
@@ -31,6 +31,7 @@ drawButton.addEventListener("click",function(){
 
 })
 resetButton.addEventListener("click",function(){
+    lottoNumbers.splice(0,6) // from 0th index , 6 many remove
     numbers.innerHTML = "";
 
 })
